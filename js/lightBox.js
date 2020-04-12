@@ -24,6 +24,11 @@ $(function(){
 		$("#lightBox .lbContainer").addClass("active");
 		$("#lightBox .lbLoader").addClass("active");
 	});
+
+	lbImage.onload = function(){
+	    isImageLoaded = true;
+	    if(isImageLoaded && isAnimationEnd) ActiveImage();
+	}
 	
 	$(document).on("animationend",".lbContainer",function(){
 		isAnimationEnd = true;
@@ -44,11 +49,6 @@ $(function(){
 	$(document).on("click",".lbOuterContainer",function(e){
 		return false;
 	});
-
-	lbImage.onload = function(){
-	    isImageLoaded = true;
-	    if(isImageLoaded && isAnimationEnd) ActiveImage();
-	}
 
 	var ActiveImage = function(){
 		
