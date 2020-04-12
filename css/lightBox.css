@@ -95,17 +95,7 @@
   margin: auto;
 }
 
-.lbClose{
-  display: block;
-  float: right;
-  width: 30px;
-  height: 30px;
-  margin-top:10px;
-  background: url(https://on-ze.com/demo/jquery-lightbox/img/close.png) top right no-repeat;
-  text-align: right;
-}
-
-.lbImage, .lbClose {
+.lbImage {
   opacity: 0;
   visibility: hidden;
 }

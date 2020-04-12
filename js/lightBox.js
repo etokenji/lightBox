@@ -13,8 +13,8 @@ $(function(){
 		$("#lightBoxOverlay").addClass("active");
 		$("#lightBox").addClass("active");
 	
-		$("#lightBox .lbOuterContainer").height(lbImage.height + 5);
-		$("#lightBox .lbOuterContainer").width(lbImage.width + 5);
+		$("#lightBox .lbOuterContainer").height(lbImage.height + 10);
+		$("#lightBox .lbOuterContainer").width(lbImage.width + 10);
 	
 		$("#lightBox .lbContainer").height(lbImage.height);
 		$("#lightBox .lbContainer").width(lbImage.width);
@@ -29,14 +29,14 @@ $(function(){
 	    isImageLoaded = true;
 	    if(isImageLoaded && isAnimationEnd) ActiveImage();
 	}
-	
+
 	$(document).on("animationend",".lbContainer",function(){
 		isAnimationEnd = true;
 		if(isImageLoaded && isAnimationEnd) ActiveImage();
 	});
 	
 	//画像周り、閉じるボタンで非表示
-	$(document).on("click",".lbClose, .imageBoxLightBox, .imageBoxLightBoxOverlay",function(){
+	$(document).on("click",".imageBoxLightBox, .imageBoxLightBoxOverlay",function(){
 		$("#lightBox").removeClass("active");
 		$("#lightBox .lbItem").removeClass("active");
 		$("#lightBoxOverlay").removeClass("active");
