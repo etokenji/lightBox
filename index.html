@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+     	<meta charset="utf-8"/>
+     	<link rel="stylesheet" type="text/css" href="css\lightBox.css"></link>
+        <style type="text/css" media="screen">
+            #test-list{
+                margin: auto;
+                width: 970px;
+            }
+            #test-list ul li{
+                display: inline;
+            }
+
+            #test-list li{
+                margin-right: 50px;
+            }
+
+            #test-list img{
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+     	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+     	<script type="text/javascript" src="https://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+     	<script type="text/javascript" src="js\lightBox.js"></script>
+	</head>
+	<body>
+        <div id="test-list">
+            <ul>
+                <li class="test-image"><img src="image/image1.jpg" alt=" サムネ1"></li>
+                <li class="test-image"><img src="image/image5.jpg" alt=" サムネ2"></li>
+                <li class="test-image"><img src="image/image4.jpg" alt=" サムネ3"></li>
+            </ul>
+        </div>
+
+        <div id="lightBoxOverlay" class="imageBoxLightBoxOverlay"></div>
+        <div id="lightBox" class="imageBoxLightBox lbItem">
+            <div class="lbOuterContainer lbItem">
+                <div class="lbContainer lbItem">
+                    <img class="lbImage lbItem" src="">
+                    <div class="lbLoader">
+                        <img src="https://dekiteru.net/cms/js/ajax-loader.gif"></img>
+                    </div>
+                </div>
+            </div>
+            <div class="lbDataContainer lbItem">
+                <div class="lbItem">
+                    <a class="lbClose lbItem"></a>
+                </div>
+            </div>
+        </div>
+
+	</body>
+
+</html>
